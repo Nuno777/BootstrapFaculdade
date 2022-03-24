@@ -7,6 +7,12 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <title>Pagina Inicial</title>
     </head>
+    <style>
+        span{
+            color: gray;
+            font-size: 12px;
+        }
+    </style>
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,11 +40,83 @@
                 </div>
             </nav>
         </header>
-        <div class="container">
+        <!--navbar-->
 
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Contacte-nos</h2>
+                </div>
+            </div>
+            <form action="contacto" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label for="priName" class="form-label">Primeiro
+                        Nome</label>
+                    <input type="text" class="form-control" id="priName"
+                        required>
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="ultName" class="form-label">Ultimo
+                        Nome</label>
+                    <input type="text" class="form-control" id="ultName"
+                        required>
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email"
+                        aria-describedby="emailFeedback" required>
+                    <div id="emailFeedback"
+                        class="invalid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="endereco" class="form-label">Endereço <span>(opcional)</span></label>
+                    <input type="text" class="form-control" id="endereco"
+                        aria-describedby="enderecoFeedback">
+                    <div id="enderecoFeedback"
+                        class="invalid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="gen" class="form-label">Genero</label>
+                    <select class="form-select" id="gen"
+                        aria-describedby="genFeedback" required>
+                        <option selected disabled>Escolha...</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                    </select>
+                    <div id="genFeedback"
+                        class="invalid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="tel" class="form-label">Telemovel <span>(opcional)</span></label>
+                    <input type="tel" maxlength="9" class="form-control"
+                        id="tel"
+                        aria-describedby="telFeedback">
+                    <div id="telFeedback"
+                        class="invalid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" required></textarea>
+                    <div class="invalid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="btn btn-primary w-100" type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/contacto.js"></script>
     </body>
 
     <!--Inicio do footer-->
