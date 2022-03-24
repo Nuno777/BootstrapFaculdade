@@ -48,24 +48,29 @@
                     <h2>Contacte-nos</h2>
                 </div>
             </div>
-            <form action="contacto" method="post" class="row g-3">
+            <form id="contato" action="" method="post" class="row g-3">
                 <div class="col-md-6">
-                    <label for="priName" class="form-label">Primeiro
+                    <label for="name" class="form-label">Primeiro
                         Nome</label>
-                    <input type="text" class="form-control" id="priName"
-                        required>
-                    <div class="valid-feedback">
+                    <div class="is-invalid">
+                        <input type="text" class="form-control" id="name"
+                            required></div>
+                    <div id="validarfeed"
+                        class="invalid-feedback invalid-name">
+                        Campo obrigatorio.
                     </div>
+
                 </div>
                 <div class="col-md-6">
-                    <label for="ultName" class="form-label">Ultimo
+                    <label for="apelido" class="form-label">Ultimo
                         Nome</label>
-                    <input type="text" class="form-control" id="ultName"
-                        required>
-                    <div class="valid-feedback">
+                    <input type="text" class="form-control"id="apelido">
+                    <div id="validarfeed"
+                        class="invalid-feedback invalid-apelido">
+                        Campo obrigatorio.
                     </div>
                 </div>
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email"
                         aria-describedby="emailFeedback" required>
@@ -108,24 +113,24 @@
                     <textarea class="form-control" id="mensagem" required></textarea>
                     <div class="invalid-feedback">
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-12">
                     <button class="btn btn-primary w-100" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
-        <script src="js/jquery.min.js"></script>
+        <!--Inicio do footer-->
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© 2022 DWM</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Pagina Inicia</a></li>
+                <li class="list-inline-item"><a href="freguesias.html">Freguesias</a></li>
+                <li class="list-inline-item"><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </footer>
+        <script src="js/"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/contacto.js"></script>
+        <script src="js/forms.js"></script>
     </body>
-
-    <!--Inicio do footer-->
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">© 2022 DWM</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Pagina Inicia</a></li>
-            <li class="list-inline-item"><a href="freguesias.html">Freguesias</a></li>
-            <li class="list-inline-item"><a href="contatos.html">Contatos</a></li>
-        </ul>
-    </footer>
 </html>
