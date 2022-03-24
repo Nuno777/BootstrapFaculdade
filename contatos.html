@@ -64,26 +64,29 @@
                 <div class="col-md-6">
                     <label for="apelido" class="form-label">Ultimo
                         Nome</label>
-                    <input type="text" class="form-control"id="apelido">
+                    <input type="text" class="form-control" id="apelido"
+                        required>
                     <div id="validarfeed"
                         class="invalid-feedback invalid-apelido">
                         Campo obrigatorio.
                     </div>
                 </div>
-                <!-- <div class="col-md-12">
+                <div class="col-md-12">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email"
                         aria-describedby="emailFeedback" required>
-                    <div id="emailFeedback"
-                        class="invalid-feedback">
+                    <div id="validarfeed"
+                        class="invalid-feedback invalid-email">
+                        Campo obrigatorio.
                     </div>
                 </div>
                 <div class="col-md-12">
                     <label for="endereco" class="form-label">Endereço <span>(opcional)</span></label>
                     <input type="text" class="form-control" id="endereco"
                         aria-describedby="enderecoFeedback">
-                    <div id="enderecoFeedback"
-                        class="invalid-feedback">
+                    <div id="validarfeed"
+                        class="invalid-feedback invalid-endereco">
+                        Campo opcional.
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -95,8 +98,9 @@
                         <option>Feminino</option>
                         <option>Outro</option>
                     </select>
-                    <div id="genFeedback"
-                        class="invalid-feedback">
+                    <div id="validarfeed"
+                        class="invalid-feedback invalid-genero">
+                        Campo obrigatorio.
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -104,16 +108,19 @@
                     <input type="tel" maxlength="9" class="form-control"
                         id="tel"
                         aria-describedby="telFeedback">
-                    <div id="telFeedback"
-                        class="invalid-feedback">
+                    <div id="validarfeed"
+                        class="invalid-feedback invalid-telefone">
+                        Campo opcional.
                     </div>
                 </div>
                 <div class="col-md-12">
                     <label for="mensagem" class="form-label">Mensagem</label>
                     <textarea class="form-control" id="mensagem" required></textarea>
-                    <div class="invalid-feedback">
+                    <div id="validarfeed"
+                        class="invalid-feedback invalid-mensagem">
+                        Campo obrigatorio.
                     </div>
-                </div> -->
+                </div>
                 <div class="col-md-12">
                     <button class="btn btn-primary w-100" type="submit">Enviar</button>
                 </div>
@@ -128,7 +135,6 @@
                 <li class="list-inline-item"><a href="contatos.html">Contatos</a></li>
             </ul>
         </footer>
-        <script src="js/"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/forms.js"></script>
