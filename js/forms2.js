@@ -17,7 +17,7 @@ function formSubmit() {
     const email = $("#email").val().trim();
     const testEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     //const endereco = $("#endereco").val().trim();
-    const genero = $("#gen").val().trim();
+    //const genero = $("#gen").val().trim();
     //const telemovel = $("#tel").val().trim();
     const mensagem = $("#mensagem").val().trim();
     let hasError = false;
@@ -56,11 +56,11 @@ function formSubmit() {
     }
 
     //genero
-    if(!['masculino','feminino','outro'].includes(genero)){
+    /* if (!['masculino', 'feminino', 'outro'].includes(genero)) {
         $('#gen').addClass("is-invalid");
         showError($('#gen-container .invalid-feedback'), "Campo obrigatorio.");
         hasError = true;
-    }
+    } */
 
     //mensagem
     if (mensagem == "") {
