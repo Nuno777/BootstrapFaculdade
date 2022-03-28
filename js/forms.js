@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     function verificarNome() {
         var nome = $("#name").val().trim();
-        if (nome.length === 0 || nome.length < 6 || nome.length > 150) {
+        if (nome.length === 0  || nome.length < 6 || nome.length > 150) {
             $(".invalid-name").show();
         } else {
             $(".invalid-name").hide();
