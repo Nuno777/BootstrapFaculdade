@@ -55,10 +55,17 @@ function formSubmit() {
         hasError = true;
     }
 
+    //endereco
+    /* if (endereco.length < 6 || endereco.length > 150) {
+        $('#endereco').addClass("is-valid");
+        showError($('#endereco-container .valid-feedback'), "Campo devera ter email valido e entre 6 a 150 carateres.");
+        hasError = true;
+    } */
+
     //genero
-    /* if (!['masculino', 'feminino', 'outro'].includes(genero)) {
+    /*if (!['masculino', 'feminino', 'outro'].includes(genero)) {
         $('#gen').addClass("is-invalid");
-        showError($('#gen-container .invalid-feedback'), "Campo obrigatorio.");
+        showError($('#gen-container .invalid-feedback'));
         hasError = true;
     } */
 
