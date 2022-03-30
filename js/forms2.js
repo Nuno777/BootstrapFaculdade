@@ -16,9 +16,9 @@ function formSubmit() {
     const apelido = $("#apelido").val().trim();
     const email = $("#email").val().trim();
     const testEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    //const endereco = $("#endereco").val().trim();
+    const endereco = $("#endereco").val().trim();
     //const genero = $("#gen").val().trim();
-    //const telemovel = $("#tel").val().trim();
+    const telemovel = $("#tel").val().trim();
     const mensagem = $("#mensagem").val().trim();
     let hasError = false;
 
@@ -56,11 +56,11 @@ function formSubmit() {
     }
 
     //endereco
-    /* if (endereco.length < 6 || endereco.length > 150) {
+    if (endereco=="") {
         $('#endereco').addClass("is-valid");
-        showError($('#endereco-container .valid-feedback'), "Campo devera ter email valido e entre 6 a 150 carateres.");
+        showError($('#endereco-container .valid-feedback'), "Campo opcional.");
         hasError = true;
-    } */
+    }
 
     //genero
     /*if (!['masculino', 'feminino', 'outro'].includes(genero)) {
@@ -68,6 +68,13 @@ function formSubmit() {
         showError($('#gen-container .invalid-feedback'));
         hasError = true;
     } */
+
+    //telemovel
+    if (telemovel=="") {
+        $('#tel').addClass("is-valid");
+        showError($('#tel-container .valid-feedback'), "Campo opcional.");
+        hasError = true;
+    }
 
     //mensagem
     if (mensagem == "") {
